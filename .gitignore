@@ -1,6 +1,13 @@
-.cache
+# Logs
+pnpm-debug.log*
+.pnpm-debug.log
+
 node_modules
 dist
-zipped
-.DS_Store
+dist-xdc
+
+# Editor directories and files
+.vscode/*
 .idea
+.DS_Store
+*~

@@ -7,7 +7,6 @@ export class Pile extends Entity {
     public count = 1;
     
     constructor(x: number, y: number) {
-        super(0, 0, 0, 0);
         super(x, y, TILE_WIDTH, TILE_HEIGHT);
         this.d = -5;
     }

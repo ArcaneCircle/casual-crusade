@@ -163,6 +163,7 @@ export class Game extends Entity {
         const extra = hits.length > 0 ? 1300 : 100;
 
         if (this.life - hits.length <= 0) {
+            window.highscores.setScore(this.score);
             setTimeout(() => {
                 this.gameOver.toggle(true);
                 this.camera.shake(7, 0.3, 2);

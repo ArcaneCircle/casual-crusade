@@ -1,3 +1,4 @@
+import "webxdc-scores";
 import { tartan } from "./bg";
 import { Card } from "./card";
 import { Dude } from "./dude";
@@ -12,6 +13,9 @@ import { Game } from "./game";
 import { Level } from "./level";
 import { TextEntity } from "./text";
 import { transformToCenter } from "./engine/transformer";
+
+window.focus();
+await window.highscores.init("Casual Crusade");
 
 export const WIDTH = 800;
 export const HEIGHT = 600;
@@ -31,11 +35,12 @@ const startButton = new ButtonEntity("PLAY", WIDTH * 0.5, HEIGHT * 0.5 + 210, 25
 const startUi: Entity[] = [
   startButton,
   new TextEntity("CASUAL CRUSADE", 70, WIDTH * 0.5, 95, -1, ZERO, { shadow: 7 }),
-  new TextEntity("by Antti Haavikko", 35, WIDTH * 0.5, 140, -1, ZERO, { shadow: 4 }),
-  new TextEntity("Made for js13k 2023", 20, WIDTH * 0.5, 170, -1, ZERO, { shadow: 2 }),
-  new TextEntity("Press F for full screen", 18, WIDTH * 0.5, HEIGHT - 20, -1, ZERO, { shadow: 2 })
+  new TextEntity("Created by Antti Haavikko", 18, WIDTH * 0.5, HEIGHT - 20, -1, ZERO, { shadow: 2 })
 ];
 
+if (window.highscores.getScore() > 0) {
+  startUi.push(new TextEntity("HIGH SCORE: " + window.highscores.getScore(), 30, WIDTH * 0.5, 140, -1, ZERO, { shadow: 2 }));
+}
 const ui: TextEntity[] = [
   new TextEntity("LIFE: 10", 30, 10, 35, -1, ZERO, { shadow: 3, align: "left" }),
   new TextEntity("0", 50, WIDTH - 15, 55, -1, ZERO, { shadow: 4, align: "right" }),
