@@ -1,4 +1,4 @@
-# Casual Crusade [![CI](https://github.com/DeltaZen/casual-crusade/actions/workflows/ci.yml/badge.svg)](https://github.com/DeltaZen/casual-crusade/actions/workflows/ci.yml) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+# Casual Crusade [![CI](https://github.com/ArcaneCircle/casual-crusade/actions/workflows/ci.yml/badge.svg)](https://github.com/ArcaneCircle/casual-crusade/actions/workflows/ci.yml) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 Use your deck of tiles to build a path covering all the lands spreading the good word
 while also pillaging some rewards as additions to your deck or sometimes even blessing
