@@ -1,4 +1,4 @@
-import "webxdc-scores";
+import "@webxdc/highscores";
 import { tartan } from "./bg";
 import { Card } from "./card";
 import { Dude } from "./dude";
@@ -15,7 +15,7 @@ import { TextEntity } from "./text";
 import { transformToCenter } from "./engine/transformer";
 
 window.focus();
-await window.highscores.init("Casual Crusade");
+await window.highscores.init();
 
 export const WIDTH = 800;
 export const HEIGHT = 600;

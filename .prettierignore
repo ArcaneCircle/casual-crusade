@@ -1,3 +1,5 @@
 dist
 dist-xdc
 pnpm-lock.yaml
+
+src/engine/zzfx.ts

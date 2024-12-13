@@ -10,7 +10,7 @@ Played with mouse (or touch) only.
 
 ### Installing Dependencies
 
-After cloning this repo, install dependecies:
+After cloning this repo, install dependencies:
 
 ```
 pnpm i
@@ -24,7 +24,7 @@ pnpm check
 
 ### Testing the app in the browser
 
-To test your work in your browser while developing:
+To test your work in your browser (with hot reloading!) while developing:
 
 ```
 pnpm start
@@ -52,6 +52,6 @@ The resulting optimized `.xdc` file is saved in `dist-xdc/` folder.
 To automatically build and create a new GitHub release with the `.xdc` file:
 
 ```
-git tag v1.0.1
+git tag -a v1.0.1
 git push origin v1.0.1
 ```
